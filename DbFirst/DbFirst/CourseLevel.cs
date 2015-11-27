@@ -10,14 +10,11 @@
 namespace DbFirst
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class CourseSection
+    public enum CourseLevel : byte
     {
-        public int SectionID { get; set; }
-        public int CourseID { get; set; }
-        public string Title { get; set; }
-    
-        public virtual Course Cours { get; set; }
+        Beginner = 1,
+        Intermediate = 2,
+        Advanced = 3
     }
 }

@@ -11,7 +11,7 @@ namespace DbFirst
 {
     using System;
     
-    public partial class GetCourses_Result
+    public partial class GetCoursesResult
     {
         public int CourseID { get; set; }
         public int AuthorID { get; set; }

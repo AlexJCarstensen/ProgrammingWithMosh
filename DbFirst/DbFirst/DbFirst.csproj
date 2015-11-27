@@ -55,7 +55,10 @@
     <Compile Include="Author.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Cours.cs">
+    <Compile Include="Course.cs">
+      <DependentUpon>PlutoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CourseLevel.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CourseSection.cs">
@@ -64,7 +67,7 @@
     <Compile Include="funcGetAuthorCourses_Result.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="GetCourses_Result.cs">
+    <Compile Include="GetCoursesResult.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PlutoModel.Context.cs">

@@ -7,14 +7,27 @@ namespace DbFirst
 {
     class Program
     {
-        static void Main(string[] args)
+        public enum Level : byte
         {
-            var dbContext = new PlutoDbContext();
-            var courses = dbContext.GetCourses();
-            foreach (var c in courses)
-            {
-                Console.WriteLine(c.Title);
-            }
+            Beginner = 1,
+            Intermediate = 2,
+            Advanced = 3
+        }
+        static void Main(string[] args)
+        {   
+            // First part
+
+            //var dbContext = new PlutoDbContext();
+
+            //var courses = dbContext.GetCourses();
+            //foreach (var c in courses)
+            //{
+            //    Console.WriteLine(c.Title);
+            //}
+
+            // second part
+
+            var course = new Course {Level = CourseLevel.Beginner};
         }
     }
 }
