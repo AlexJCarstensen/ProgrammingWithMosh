@@ -10,16 +10,11 @@
 namespace VidzyDbFirst
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Video
+    public enum ClassificationLevel : byte
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public System.DateTime ReleaseDate { get; set; }
-        public byte GenreId { get; set; }
-        public ClassificationLevel Classification { get; set; }
-    
-        public virtual Genre Genre { get; set; }
+        Silver = 1,
+        Gold = 2,
+        Platinum = 3
     }
 }

@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassificationLevel.cs">
+      <DependentUpon>VidzyModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Genre.cs">
       <DependentUpon>VidzyModel.tt</DependentUpon>
     </Compile>

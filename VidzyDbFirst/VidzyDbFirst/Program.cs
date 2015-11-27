@@ -12,10 +12,11 @@ namespace VidzyDbFirst
         {
 
             var context = new VidzyDbContext();
-           
-            context.AddVideo("Hunger Games", DateTime.Now, "Action");
-
             
+            
+            context.AddVideo("Hunger Games", DateTime.Now, "Action",  1);
+
+
 
 
 
