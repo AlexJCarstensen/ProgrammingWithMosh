@@ -7,7 +7,7 @@ namespace DbFirst
 {
     class Program
     {
-        public enum Level : byte
+        public enum Leveler : byte
         {
             Beginner = 1,
             Intermediate = 2,
@@ -27,7 +27,8 @@ namespace DbFirst
 
             // second part
 
-            var course = new Course {Level = CourseLevel.Beginner};
+            var course = new Course();
+            course.Level = CourseLevel.Beginner;
         }
     }
 }
