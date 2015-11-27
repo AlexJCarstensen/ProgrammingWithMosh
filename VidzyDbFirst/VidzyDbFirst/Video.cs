@@ -14,17 +14,11 @@ namespace VidzyDbFirst
     
     public partial class Video
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Video()
-        {
-            this.Genres = new HashSet<Genre>();
-        }
-    
         public int Id { get; set; }
         public string Name { get; set; }
         public System.DateTime ReleaseDate { get; set; }
+        public byte GenreId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Genre> Genres { get; set; }
+        public virtual Genre Genre { get; set; }
     }
 }

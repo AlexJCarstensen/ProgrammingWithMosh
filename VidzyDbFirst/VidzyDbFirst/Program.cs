@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 
 namespace VidzyDbFirst
@@ -9,9 +10,14 @@ namespace VidzyDbFirst
     {
         static void Main(string[] args)
         {
-            var dbContext = new VidzyDbContext();
-            dbContext.AddVideo("Mission Impossible", new DateTime(1985, 7, 15), "Action");
-            dbContext.AddVideo("Titanic", DateTime.Now, "Romance");
+
+            var context = new VidzyDbContext();
+           
+            context.AddVideo("Hunger Games", DateTime.Now, "Action");
+
+            
+
+
 
         }
     }
