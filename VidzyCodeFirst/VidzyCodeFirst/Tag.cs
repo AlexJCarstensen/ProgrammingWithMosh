@@ -1,17 +1,15 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace VidzyCodeFirst
+namespace VidzyCodeFirst.Migrations
 {
-    public class Genre
+    public class Tag
     {
-        public Genre()
+        public Tag()
         {
-            Videos = new Collection<Video>();
+            Videos = new HashSet<Video>();
         }
         public byte Id { get; set; }
         public string Name { get; set; }
-
         public ICollection<Video> Videos { get; set; }
     }
 }
