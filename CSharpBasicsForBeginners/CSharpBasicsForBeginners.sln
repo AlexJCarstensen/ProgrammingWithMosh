@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlow1", "ControlFlow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlow2", "ControlFlow2\ControlFlow2.csproj", "{D3761EB4-E57E-4454-B2D8-1C11ECE6AADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndLists", "ArraysAndLists\ArraysAndLists.csproj", "{ACD9AEE1-24A4-4D59-8E49-1C6ACFF9A3FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D3761EB4-E57E-4454-B2D8-1C11ECE6AADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3761EB4-E57E-4454-B2D8-1C11ECE6AADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3761EB4-E57E-4454-B2D8-1C11ECE6AADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD9AEE1-24A4-4D59-8E49-1C6ACFF9A3FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD9AEE1-24A4-4D59-8E49-1C6ACFF9A3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD9AEE1-24A4-4D59-8E49-1C6ACFF9A3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD9AEE1-24A4-4D59-8E49-1C6ACFF9A3FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
