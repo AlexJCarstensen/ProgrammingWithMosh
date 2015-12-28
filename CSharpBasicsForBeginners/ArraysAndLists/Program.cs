@@ -87,7 +87,7 @@ namespace ArraysAndLists
             //{
             //    Console.Write("Next number: ");
             //    var input = Console.ReadLine();
-            //    if (input == "Quit")
+            //    if (input.ToLower() == "quit")
             //        break;
             //    if (string.IsNullOrWhiteSpace(input))
             //        continue;
