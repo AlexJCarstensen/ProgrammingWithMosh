@@ -14,13 +14,10 @@ namespace ControlFlow2
 
             #region Program1
 
-            //var count = 0;
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    if (i%3 == 0)
-            //        count++;
-            //}
-            //Console.WriteLine(count);
+            //Console.WriteLine("Please input a number:");
+            //var input = Console.ReadLine();
+            //var result = CountDivisibleByThree(Convert.ToInt32(input));
+            //Console.WriteLine($"{input} has {result} numbers that are divisible by 3");
 
             #endregion
 
@@ -99,13 +96,24 @@ namespace ControlFlow2
 
             #region Program5
 
-            Console.WriteLine("Please enter a series of numbers separated by commas");
-            var input = Console.ReadLine();
-            var test = input.Split(Convert.ToChar(","));
-            var max = test.AsEnumerable().Max();
-            Console.WriteLine(max);
+            //Console.WriteLine("Please enter a series of numbers separated by commas");
+            //var input = Console.ReadLine();
+            //var test = input.Split(Convert.ToChar(","));
+            //var max = test.AsEnumerable().Max();
+            //Console.WriteLine(max);
 
             #endregion
+        }
+
+        public static int CountDivisibleByThree(int number)
+        {
+            var count = 0;
+            for (int i = 0; i < number; i++)
+            {
+                if (i % 3 == 0)
+                    count++;
+            }
+            return count;
         }
 
     }
