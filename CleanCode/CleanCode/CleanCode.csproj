@@ -53,9 +53,13 @@
     <Compile Include="FullRefactoring\Example1.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="FullRefactoring\PostRepository.cs" />
     <Compile Include="LongMethods\Example1.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="LongMethods\MemoryFileCreator.cs" />
+    <Compile Include="LongMethods\TableReader.cs" />
+    <Compile Include="MagicNumbers\DocumentStatus.cs" />
     <Compile Include="MagicNumbers\MagicNumbers.cs" />
     <Compile Include="LongParameterList\LongParameterList.cs" />
     <Compile Include="Names\Names.cs" />
@@ -67,6 +71,8 @@
     <Compile Include="SwitchStatements\Customer.cs" />
     <Compile Include="SwitchStatements\MonthlyStatement.cs" />
     <Compile Include="SwitchStatements\MonthlyUsage.cs" />
+    <Compile Include="SwitchStatements\PayAsYouGoCustomer.cs" />
+    <Compile Include="SwitchStatements\UnlimitedCustomer.cs" />
     <Compile Include="Tuples\Tuples.cs" />
     <Compile Include="VariableDeclarationsAtTheTop\PayCalculator.cs" />
   </ItemGroup>

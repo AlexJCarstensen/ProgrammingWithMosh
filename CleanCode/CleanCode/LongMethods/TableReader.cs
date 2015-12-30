@@ -2,7 +2,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-internal class TableReader
+ internal class TableReader
 {
     public DataTable GetDataTable()
     {
