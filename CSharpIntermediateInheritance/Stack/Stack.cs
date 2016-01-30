@@ -20,7 +20,7 @@ namespace Stack
 
         public object Pop()
         {
-            if (_list == null) throw new InvalidOperationException("The list is empty");
+            if (_list.Count == 0) throw new InvalidOperationException("The list is empty");
             var removed = _list[0];
             _list.Remove(_list[0]);
             return removed;
