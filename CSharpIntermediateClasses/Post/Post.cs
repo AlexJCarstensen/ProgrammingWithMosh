@@ -4,12 +4,18 @@ namespace Post
 {
     public class Post
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public DateTime DateTime { get; set; }
+        private string Title { get; set; }
+        private string Description { get; set; }
+        private DateTime timeCreated { get; set; }
+        private int Voting { get; set; }
 
-        public int Voting { get; private set; }
-
+        public Post(string title, string description)
+        {
+            Title = title;
+            Description = description;
+            Voting = 0;
+            timeCreated = DateTime.Now;
+        }
         public void UpVote()
         {
             Voting++;
@@ -17,6 +23,13 @@ namespace Post
         public void DownVote()
         {
             Voting--;
+        }
+
+        public void DisplayPost()
+        {
+            Console.WriteLine($"Title: {Title}\n" +
+                              $"Description: {Description}\n" +
+                              $"Votes: {Voting}"); 
         }
     }
 }

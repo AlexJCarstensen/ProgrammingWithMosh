@@ -10,12 +10,8 @@ namespace Post
     {
         static void Main(string[] args)
         {
-            var post = new Post
-            {
-                DateTime = DateTime.Now,
-                Description = "En sej app",
-                Title = "Baby"
-            };
+            var post = new Post("Baby", "dette er en post omkring babyer");
+            
 
             post.UpVote();
             post.UpVote();
@@ -23,7 +19,8 @@ namespace Post
             post.UpVote();
             post.DownVote();
 
-            Console.WriteLine(post.Voting);
+            post.DisplayPost();
+            
 
         }
     }
