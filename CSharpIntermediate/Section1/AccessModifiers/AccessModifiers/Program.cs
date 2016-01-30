@@ -5,17 +5,18 @@ namespace AccessModifiers
 {
     public class Person
     {
-        private DateTime _birthdate;
+        public DateTime BirthDate { get; set; }
+        //private DateTime _birthdate;
 
-        public void SetBirthdate(DateTime birthdate)
-        {
-            _birthdate = birthdate;
-        }
+        //public void SetBirthdate(DateTime birthdate)
+        //{
+        //    _birthdate = birthdate;
+        //}
 
-        public DateTime GetBirthdate()
-        {
-            return _birthdate;
-        }
+        //public DateTime GetBirthdate()
+        //{
+        //    return _birthdate;
+        //}
     }
 
     class Program
@@ -23,8 +24,8 @@ namespace AccessModifiers
         static void Main(string[] args)
         {
             var person = new Person();
-            person.SetBirthdate(new DateTime(1982, 1, 1));
-            Console.WriteLine(person.GetBirthdate());
+            person.BirthDate = new DateTime(1992,1,1);
+            Console.WriteLine(person.BirthDate);
 
         }
     }

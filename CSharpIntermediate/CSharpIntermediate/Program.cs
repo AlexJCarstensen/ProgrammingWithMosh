@@ -7,9 +7,11 @@ namespace CSharpIntermediate
     {
         static void Main(string[] args)
         {
-            var customer = new Customer();
-            customer.Id = 1;
-            customer.Name = "John";
+            var customer = new Customer
+            {
+                Id = 1,
+                Name = "John"
+            };
 
             var order = new Order();
             customer.Orders.Add(order);

@@ -13,15 +13,15 @@ namespace Indexers
             _dictionary = new Dictionary<string, string>();
         }
 
-        public void SetItem(string key, string value)
-        {
+        //public void SetItem(string key, string value)
+        //{
 
-        }
+        //}
 
-        public string GetItem(string key)
-        {
-
-        }
+        //public string GetItem(string key)
+        //{
+            
+        //}
 
         public string this[string key]
         {

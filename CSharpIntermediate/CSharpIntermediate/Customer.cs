@@ -24,5 +24,6 @@ namespace CSharpIntermediate
         {
             this.Name = name;
         }
+
     }
 }

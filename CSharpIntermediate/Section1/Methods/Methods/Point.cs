@@ -22,7 +22,7 @@ namespace Methods
         public void Move(Point newLocation)
         {
             if (newLocation == null)
-                throw new ArgumentNullException("newLocation");
+                throw new ArgumentNullException(nameof(newLocation), "The new location is null!");
 
             Move(newLocation.X, newLocation.Y);
         }
