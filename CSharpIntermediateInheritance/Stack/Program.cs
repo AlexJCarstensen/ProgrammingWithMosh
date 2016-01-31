@@ -13,11 +13,11 @@ namespace Stack
         {
 
             var stack = new Stack();
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
+            stack.Push("hello");
+            stack.Push("pussy");
+            stack.Push("cat");
 
-            stack.Clear();
+           // stack.Clear();
 
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
