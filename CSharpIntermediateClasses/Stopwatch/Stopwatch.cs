@@ -6,9 +6,9 @@ namespace Stopwatch
 {
     public class Stopwatch
     {
-        private static DateTime StartTime { get; set; }
-        private static DateTime EndTime { get; set; }
-        private static TimeSpan Duration { get; set; }
+        private static DateTime _startTime;
+        private static DateTime _endTime;
+        private static TimeSpan _duration;
 
         private static bool _activated;
        
@@ -18,19 +18,27 @@ namespace Stopwatch
             if(_activated)
                 throw new InvalidOperationException();
 
-            StartTime = DateTime.Now;
-            Console.WriteLine($"Time started at {StartTime}");
+            _startTime = DateTime.Now;
+            Console.WriteLine($"Time started at {_startTime}");
             _activated = true;
         }
 
         public static void Stop()
         {
-            EndTime = DateTime.Now;
-            Console.WriteLine($"Time ended at {EndTime}");
+            if (!_activated)
+                throw new InvalidOperationException("Stopwatch is not running");
 
-            Duration = EndTime - StartTime;
-            Console.WriteLine($"Time between start and end is {Duration}");
+            _endTime = DateTime.Now;
+            Console.WriteLine($"Time ended at {_endTime}");
+
+            GetInterval();
             _activated = false;
+        }
+
+        private static void GetInterval()
+        {
+            _duration = _endTime - _startTime;
+            Console.WriteLine($"Time between start and end is {_duration}");
         }
     }
 }
